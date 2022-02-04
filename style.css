@@ -1,7 +1,95 @@
-body {
-    background-color: #1f1f1f;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
 }
 
-h1 {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Elements */
+body {
+    min-height: 100%;
+    font-family: 'Roboto', Sans-Serif;
+    background-color: #161616;
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+}
+
+.burger {
+    position: fixed;
+    left: 45px;
+    top: 44px;
+    filter: drop-shadow(0, 4px, 4px);
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('images/heroWallDuo.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #444;
+
+    filter: drop-shadow(10px, 100px, 6px, #000);
+}
+
+.logo {
+}
+
+main {
+    width: 65vw;
+    margin: auto;
+}
+
+section {
+    margin-top: 20px;
+    background-color: #222;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #222;
+
+    text-align: center;
+    color: #E43B98;
+}
+
+/* Text*/
+h1, h2, h3, h4, h5, h6, p, a {
     color: #ffffff;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #E43B98;
+    cursor: pointer;
+}
+
+p {
+    padding: 5px 0 5px 0;
 }
