@@ -49,9 +49,6 @@ header {
     filter: drop-shadow(10px, 100px, 6px, #000);
 }
 
-.logo {
-}
-
 main {
     width: 65vw;
     margin: auto;
