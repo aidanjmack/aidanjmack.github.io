@@ -12,17 +12,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+
     </head>
     
     <body>
-        <img class='burger' src="images/burger.svg" >
-        <header>
+        <nav id="sideNav" class="sideNav">
+            <a href="#topHeader" class="navItem">Home</a>
+            <a href="#whoIAm" class="navItem">Who I Am</a>
+            <a href="#whatIDo" class="navItem">What I Do</a>
+            <a href="#projects" class="navItem">Projects</a>
+            <a href="#contact" class="navItem">Contact</a>
+            
+        </nav>
+
+        <img id="burgerNav" class='burgerNav' src="images/burger.svg" >
+        <header id="topHeader">
                 <img id="logo" src="images/AMLogo_Blue.svg" alt="Aidan's logo">
-                <img src="images/headerText.svg" alt="Aidan Mackenzie - Digital Design and User Experience">
+                <img id="headerText" src="images/headerText.svg" alt="Aidan Mackenzie - Digital Design and User Experience">
         </header>
 
         <main>
-            <section id="'whoIAm">
+            <section id="whoIAm">
                 <h2>
                     Who I Am
                 </h2>
@@ -40,7 +52,7 @@
                 
             </section>
 
-            <section id="whatIDo">
+            <section id="whatIDo" class="sectHighlight">
                 <h2>
                     What I Do
                 </h2>
@@ -54,7 +66,7 @@
                 </p>
             </section>
 
-            <section>
+            <section id="projects">
                 <h2>
                     Projects
                 </h2>
@@ -63,7 +75,7 @@
                 </iframe>
             </section>
 
-            <section>
+            <section id="contact">
                 <h2>
                     Contact
                 </h2>
