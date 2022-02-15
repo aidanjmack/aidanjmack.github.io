@@ -1,4 +1,17 @@
 $(document).ready(function(){
+    //smooth scroll navigation
+    $('.sideNav a').on('click', function(e) {
+        if(this.hash !== "") {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $('html ,body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+        }
+    });
+
     //nav functions
     function openNav() {
         $('.sideNav').css('width','60%');
@@ -13,7 +26,7 @@ $(document).ready(function(){
         if(!nav.is(e.target)){
             closeNav();
         }
-    })
+    });
 
     // nav open/close triggers
     $('#burgerNav').click(openNav);
