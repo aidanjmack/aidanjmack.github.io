@@ -12,23 +12,54 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
 }
+
+
+/* Text*/
+h1, h2, h3, h4, h5, h6, p, a {
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #E43B98;
+    cursor: pointer;
+}
+
+p {
+    padding-block: 0.5em;
+}
+
 
 /* Page Elements */
 body {
+    width: 100vw;
     min-height: 100%;
     font-family: 'Roboto', Sans-Serif;
     background-color: #161616;
-    
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /*IE and Edge */
+    scrollbar-width: none;  /*Firefox*/
   
 }
 
 .burgerNav {
     position: fixed;
-    left: 45px;
-    top: 44px;
+    left: 4vw;
+    top: 3vh;
+    width: 10vw;
+    max-width: 100px; 
+
     filter: drop-shadow(0, 4px, 4px);
 }
 
@@ -54,6 +85,7 @@ body {
     box-shadow: 20px, 10px, 10px, #000;
 
     overflow-x: hidden;
+    white-space: nowrap;
 
     transition: 0.5s;
 }
@@ -64,7 +96,8 @@ body {
     padding-left: 45px;
     padding-top: 15px;
 
-    font-size: 52px;
+    font-size: 4em; 
+    font-weight: 500;
     text-decoration: none;
 
 }
@@ -74,10 +107,12 @@ body {
 }
 
 
-header {
-    width: 100%;
+#topHeader {
+    width: 100vw;
     height: 100vh;
-    padding-left: 5%;
+
+    overflow-x: hidden;
+
 
     display: flex;
     justify-content: center;
@@ -92,9 +127,14 @@ header {
     filter: drop-shadow(10px, 100px, 6px, #000);
 }
 
+
+
 #topHeader > img {
-    min-width: 25%;
-    height: auto;
+    max-height: 20vw; 
+}
+
+#headerText {
+    max-height: 20vw;  
 }
 
 main {
@@ -103,14 +143,19 @@ main {
 }
 
 section {
-    margin-top: 20px;
+    margin-top: 1rem;
     background-color: #222;
-    padding: 20px 10%;
+    padding: 2rem 3rem;
     border-radius: 5px;
 }
 
 .sectHighlight {
     background-image: linear-gradient(#C93FA3, #C9485F);
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -126,25 +171,26 @@ footer {
     color: #E43B98;
 }
 
-/* Text*/
-h1, h2, h3, h4, h5, h6, p, a {
-    color: #ffffff;
-}
 
-h2 {
-    font-size: 28px;
-    padding-bottom: 10px;
-}
 
-a {
-    text-decoration: underline;
-}
+/* Mobile styling */
+@media screen and (max-width:500px) {
+    html {
+        font-size: 14px;
+    }
 
-a:hover {
-    color: #E43B98;
-    cursor: pointer;
-}
+    .navItem {
+        font-size: 2em;
+    }
 
-p {
-    padding: 5px 0 5px 0;
+    #topHeader {
+        min-height: 100vh;
+        width: 100vw;
+        background-image: url('images/heroWallDuo_Mobile.jpg');
+    }
+
+    main {
+        width: 85vw; 
+    }
+
 }

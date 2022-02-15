@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //nav functions
     function openNav() {
-        $('.sideNav').css('width','40%');
+        $('.sideNav').css('width','60%');
     }
     function closeNav() {
         $('.sideNav').css('width','0');    
