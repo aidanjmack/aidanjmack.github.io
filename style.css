@@ -152,9 +152,48 @@ section {
     background-image: linear-gradient(#C93FA3, #C9485F);
 }
 
-#projects {
+.flexWrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.projectFigure {
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(#C93FA3, #C9485F);
+    height: 250px;
+    width: 48%;
+    min-width: 250px;
+    position: relative;
+    margin-top: 0.5em;
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.projectFigure:hover {
+    cursor: pointer;
+}
+
+.projectFigure > figcaption {
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+ 
+    color: #fff;
+    background-color: rgb(25,25,25,0.6);
+    padding: 10px;
+    text-align: center;
+}
+
+.projectLogo {
+    margin: auto;
+    height: 50%;
+    padding: 0.5em;
 }
 
 footer {
