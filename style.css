@@ -83,9 +83,9 @@ body {
     background-color: rgba(14, 190, 255, 0.98);
     box-shadow: 20px, 10px, 10px, #000;
 
+    /* opening animation */
     overflow-x: hidden;
     white-space: nowrap;
-
     transition: 0.5s;
 }
 
