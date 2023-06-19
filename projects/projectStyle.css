@@ -46,6 +46,8 @@ body {
     font-family: 'Roboto', Sans-Serif;
     background-color: #161616;
 
+    margin-top: 80px;
+
     overflow-x: hidden;
     -ms-overflow-style: none;  /*IE and Edge */
     scrollbar-width: none;  /*Firefox*/
@@ -53,11 +55,9 @@ body {
 }
 
 .burgerNav {
-    position: fixed;
-    left: 4vw;
-    top: 3vh;
-    width: 10vw;
-    max-width: 80px; 
+    margin-left: 4vw;
+    margin-top: 5px;
+    height: 75%;
 
     filter: drop-shadow(0, 4px, 4px);
 }
@@ -105,43 +105,22 @@ body {
     color: #E43B98;
 }
 
-
-#topHeader {
-    width: 100vw;
-    height: 100vh;
-
-    overflow-x: hidden;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url('images/heroWallDuo.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #444;
-
-    filter: drop-shadow(10px, 100px, 6px, #000);
-}
-
 #compactHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+
     width: 100vw;
-    height: 14vh;
+    height: 60px;
 
     overflow-x: hidden;
-
 
     display: flex;
     justify-content: left;
     align-items: center;
 
-    background-image: url('images/heroWallDuo.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #444;
+
+    background-color: #222;
 
     filter: drop-shadow(10px, 100px, 6px, #000);
 }
@@ -149,12 +128,29 @@ body {
 
 
 #compactHeader > img {
-    height: 5vw; 
+    height: 90%;
 }
 
-#topHeader > img {
-    max-height: 20vw; 
+#logo {
+    margin-left: 10px;
+    height: 80%; 
 }
+
+#headerContainer {
+    height: 100%;
+    margin-right: 10px;
+    padding-right: 10px;
+
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    background-image: linear-gradient(#C93FA3, #C9485F);
+}
+
+
 
 #headerText {
     max-height: 20vw;  
